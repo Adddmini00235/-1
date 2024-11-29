@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery interactive</title>
+    <!-- 引入css -->
+     <link rel="stylesheet" href=".././CSS/gallery.css">
+</head>
+<body>
+    <!-- HTML 画廊结构 -->
+     <!-- 主盒子 -->
+     <div class="gallery-container">
+        <!-- 子盒子 -->
+         <div class="gallery">
+            <!-- 图片 -->
+            <img id="gallery-image" src=".././IMAGES/1.jpg" alt="Gallery Image">
+         </div>
+         <!-- 按钮盒子包裹 -->
+          <div class="controls">
+            <button id="prev" onclick="changeImage(-1)">上一张</button>
+
+            <button id="next" onclick="changeImage(1)">下一张</button>
+          </div>
+     </div>
+
+     <script src=".././JS/gallery.js"></script>
+</body>
+</html>
